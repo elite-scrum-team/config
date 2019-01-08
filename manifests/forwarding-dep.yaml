@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: forwarding
-        image: elitescrumteam/forwarding-service:v7
+        image: elitescrumteam/forwarding-service:v8
         ports:
         - containerPort: 8080
       imagePullSecrets:
