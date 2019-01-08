@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: user
-        image: elitescrumteam/user-service:v3
+        image: elitescrumteam/user-service:v4
         ports:
         - containerPort: 8080
       imagePullSecrets:
