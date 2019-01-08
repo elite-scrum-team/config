@@ -5,6 +5,8 @@ metadata:
   name: dummy
   labels:
     name: dummy
+  annotations:
+    flux.weave.works/automated: 'true'
 spec:
   replicas: 2
   template:
