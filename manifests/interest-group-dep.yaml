@@ -1,0 +1,22 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: interest-group
+  labels:
+    name: interest-group
+  annotations:
+    flux.weave.works/automated: 'true'
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        name: interest-group
+    spec:
+      containers:
+      - name: interest-group
+        image: elitescrumteam/interest-group-service:latest
+        ports:
+        - containerPort: 80
+      imagePullSecrets:
+      - name: regcred
