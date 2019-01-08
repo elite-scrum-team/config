@@ -1,0 +1,23 @@
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: forwarding 
+  labels:
+    name: forwarding
+  annotations:
+    flux.weave.works/automated: 'true'
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        name: forwarding
+    spec:
+      containers:
+      - name: forwarding
+        image: elitescrumteam/forwarding-service:latest
+        ports:
+        - containerPort: 8080
+      imagePullSecrets:
+      - name: regcred
