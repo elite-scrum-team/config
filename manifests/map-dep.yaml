@@ -1,3 +1,4 @@
+---
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
@@ -15,7 +16,7 @@ spec:
     spec:
       containers:
       - name: map
-        image: elitescrumteam/map-service:latest
+        image: elitescrumteam/map-service:v2
         ports:
         - containerPort: 80
       imagePullSecrets:
