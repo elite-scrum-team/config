@@ -1,0 +1,22 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: map
+  labels:
+    name: map
+  annotations:
+    flux.weave.works/automated: 'true'
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        name: map
+    spec:
+      containers:
+      - name: map
+        image: elitescrumteam/map-service:latest
+        ports:
+        - containerPort: 80
+      imagePullSecrets:
+      - name: regcred
