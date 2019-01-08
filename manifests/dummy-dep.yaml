@@ -1,0 +1,23 @@
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: dummy
+  labels:
+    name: dummy
+  annotations:
+    flux.weave.works/automated: 'true'
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        name: dummy
+    spec:
+      containers:
+      - name: dummy
+        image: elitescrumteam/dummyservice:v5
+        ports:
+        - containerPort: 8080
+      imagePullSecrets:
+      - name: regcred
