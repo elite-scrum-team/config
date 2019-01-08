@@ -18,6 +18,6 @@ spec:
       - name: dummy
         image: elitescrumteam/dummy-service:v25
         ports:
-        - containerPort: 8080
+        - containerPort: 80
       imagePullSecrets:
       - name: regcred
