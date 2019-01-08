@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: dummy
-        image: elitescrumteam/dummy-service:v13
+        image: elitescrumteam/dummy-service:v14
         ports:
         - containerPort: 8080
       imagePullSecrets:
