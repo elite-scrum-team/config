@@ -1,3 +1,4 @@
+---
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
@@ -15,7 +16,7 @@ spec:
     spec:
       containers:
       - name: warning
-        image: elitescrumteam/warning-service:latest
+        image: elitescrumteam/warning-service:v3
         ports:
         - containerPort: 80
       imagePullSecrets:
