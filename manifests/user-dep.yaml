@@ -1,0 +1,23 @@
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: user
+  labels:
+    name: user
+  annotations:
+    flux.weave.works/automated: 'true'
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        name: user
+    spec:
+      containers:
+      - name: user
+        image: elitescrumteam/user-service:v1
+        ports:
+        - containerPort: 8080
+      imagePullSecrets:
+      - name: regcred
