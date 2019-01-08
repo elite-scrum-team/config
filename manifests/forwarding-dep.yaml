@@ -2,7 +2,7 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: forwarding 
+  name: forwarding
   labels:
     name: forwarding
   annotations:
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: forwarding
-        image: elitescrumteam/forwarding-service:latest
+        image: elitescrumteam/forwarding-service:v4
         ports:
         - containerPort: 8080
       imagePullSecrets:
