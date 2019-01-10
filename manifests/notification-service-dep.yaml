@@ -1,0 +1,23 @@
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: notification
+  labels:
+    name: notification
+  annotations:
+    flux.weave.works/automated: 'true'
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        name: notification
+    spec:
+      containers:
+      - name: notification
+        image: elitescrumteam/notification-service:latest
+        ports:
+        - containerPort: 80
+      imagePullSecrets:
+      - name: regcred
