@@ -8,7 +8,7 @@ metadata:
   annotations:
     flux.weave.works/automated: 'true'
 spec:
-  replicas: 1 
+  replicas: 1
   template:
     metadata:
       labels:
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: api
-        image: elitescrumteam/api-service:v19
+        image: elitescrumteam/api-service:v20
         ports:
         - containerPort: 8080
       imagePullSecrets:
