@@ -1,0 +1,23 @@
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: ui 
+  labels:
+    name: ui
+  annotations:
+    flux.weave.works/automated: 'true'
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        name: ui
+    spec:
+      containers:
+      - name: ui
+        image: elitescrumteam/ui-service:v24
+        ports:
+        - containerPort: 80
+      imagePullSecrets:
+      - name: regcred
