@@ -9,4 +9,3 @@ spec:
     defaultRequest:
       cpu: 0.1
     type: Container
-
