@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: api
-        image: elitescrumteam/api-service:v17
+        image: elitescrumteam/api-service:v18
         ports:
         - containerPort: 8080
       imagePullSecrets:
