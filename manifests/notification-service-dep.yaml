@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: notification
-        image: elitescrumteam/notification-service:v3
+        image: elitescrumteam/notification-service:v4
         ports:
         - containerPort: 80
       imagePullSecrets:
