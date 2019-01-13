@@ -8,11 +8,11 @@ spec:
   rules:
   - http:
       paths:
-      - path: /api/*
+      - path: /api/.*
         backend:
           serviceName: api-service
           servicePort: 80
-      - path: /*
+      - path: /.*
         backend:
           serviceName: ui-service
           servicePort: 80
