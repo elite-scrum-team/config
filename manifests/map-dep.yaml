@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: map
-        image: elitescrumteam/map-service:v6
+        image: elitescrumteam/map-service:v7
         ports:
         - containerPort: 80
       imagePullSecrets:
