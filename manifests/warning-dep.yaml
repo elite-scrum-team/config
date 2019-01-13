@@ -5,6 +5,8 @@ metadata:
   name: warning
   labels:
     name: warning
+  annotations:
+    flux.weave.works/automated: 'true'
 spec:
   replicas: 1
   template:
@@ -14,8 +16,8 @@ spec:
     spec:
       containers:
       - name: warning
-        image: elitescrumteam/warning-service:v38
+        image: elitescrumteam/warning-service:v44
         ports:
-        - containerPort: 4000 
+        - containerPort: 4000
       imagePullSecrets:
       - name: regcred
