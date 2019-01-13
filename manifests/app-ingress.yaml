@@ -16,3 +16,4 @@ spec:
         backend:
           serviceName: ui-service
           servicePort: 80
+
