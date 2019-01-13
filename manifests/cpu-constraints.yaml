@@ -9,3 +9,16 @@ spec:
     defaultRequest:
       cpu: 0.05
     type: Container
+---
+apiVersion: v1
+kind: LimitRange
+metadata:
+  name: weave-limit-range
+  namespace: weave
+spec:
+  limits:
+  - default:
+      cpu: 0.05
+    defaultRequest:
+      cpu: 0.05
+    type: Container
