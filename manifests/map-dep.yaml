@@ -18,6 +18,6 @@ spec:
       - name: map
         image: elitescrumteam/map-service:v7
         ports:
-        - containerPort: 80
+        - containerPort: 8080
       imagePullSecrets:
       - name: regcred
