@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: event
-        image: elitescrumteam/event-service:v7
+        image: elitescrumteam/event-service:v8
         ports:
         - containerPort: 80
       imagePullSecrets:
