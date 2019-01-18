@@ -2,9 +2,9 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: warning
+  name: ui
   labels:
-    name: warning
+    name: ui
   annotations:
     flux.weave.works/automated: 'true'
 spec:
@@ -12,12 +12,12 @@ spec:
   template:
     metadata:
       labels:
-        name: warning
+        name: ui
     spec:
       containers:
-      - name: warning
-        image: elitescrumteam/warning-service:v125
+      - name: ui
+        image: elitescrumteam/ui-service:v64
         ports:
-        - containerPort: 4000
+        - containerPort: 80
       imagePullSecrets:
       - name: regcred
