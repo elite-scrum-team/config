@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: user
-        image: elitescrumteam/user-service:v60
+        image: elitescrumteam/user-service:v61
         ports:
         - containerPort: 5000
       imagePullSecrets:
