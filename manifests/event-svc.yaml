@@ -4,8 +4,6 @@ metadata:
   name: event-service
   labels:
     name: event-service
-  annotations:
-    cloud.google.com/load-balancer-type: "Internal"
 spec:
   type: LoadBalancer
   ports:

@@ -4,6 +4,8 @@ metadata:
   name: interest-group-service
   labels:
     name: interest-group-service
+  annotations:
+    cloud.google.com/load-balancer-type: "Internal"
 spec:
   type: LoadBalancer
   ports:
