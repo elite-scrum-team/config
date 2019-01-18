@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: warning
-        image: elitescrumteam/warning-service:v129
+        image: elitescrumteam/warning-service:v131
         ports:
         - containerPort: 4000
       imagePullSecrets:
