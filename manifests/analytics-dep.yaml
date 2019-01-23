@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: analytics
-        image: elitescrumteam/analytics-service:v1
+        image: elitescrumteam/analytics-service:latest
         ports:
         - containerPort: 5000
       imagePullSecrets:
