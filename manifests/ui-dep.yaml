@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: ui
-        image: elitescrumteam/ui-service:v163
+        image: elitescrumteam/ui-service:v164
         ports:
         - containerPort: 80
       imagePullSecrets:
