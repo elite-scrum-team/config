@@ -1,0 +1,15 @@
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: tls-ingress
+spec:
+  tls:
+  - secretName: letsencrypt-certs 
+  rules:
+  - http:
+      paths:
+      - path: /*
+        backend:
+          serviceName: ui-service
+          servicePort: 80
