@@ -5,7 +5,7 @@ metadata:
   labels:
     name: warning-service
 spec:
-  type: LoadBalancer
+  type: ClusterIP 
   ports:
   - port: 80
     targetPort: 4000 
