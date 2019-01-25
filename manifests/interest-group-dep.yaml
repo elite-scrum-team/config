@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: interest-group
-        image: elitescrumteam/interest-group-service:v14
+        image: elitescrumteam/interest-group-service:v15
         ports:
         - containerPort: 80
       imagePullSecrets:
