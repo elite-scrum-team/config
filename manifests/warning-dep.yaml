@@ -5,6 +5,8 @@ metadata:
   name: warning
   labels:
     name: warning
+  annotations:
+    flux.weave.works/automated: 'true'
 spec:
   replicas: 2
   template:
