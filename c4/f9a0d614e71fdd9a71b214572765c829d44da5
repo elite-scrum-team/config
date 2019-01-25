@@ -1,0 +1,1 @@
+{"jobID":"20fb98ca-17da-40dc-67d8-7171f1415911","spec":{"type":"policy","cause":{"Message":"","User":"Halvor Bø \u003celitescrummaster@gmail.com\u003e"},"spec":{"default:deployment/warning":{"add":null,"remove":{"automated":"true"}}}},"result":null}
